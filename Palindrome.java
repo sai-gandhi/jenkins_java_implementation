@@ -1,12 +1,9 @@
-import java.util.Scanner;
-
 public class Palindrome {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String original = sc.nextLine();
+        // Replace Scanner with hardcoded input for testing
+        String original = "A man, a plan, a canal, Panama"; // Example input
 
-        // Remove spaces and convert to lowercase
+        // Preprocess the string (remove non-alphanumeric characters and convert to lowercase)
         String cleaned = original.replaceAll("[\\W_]+", "").toLowerCase();
 
         StringBuilder reversed = new StringBuilder(cleaned);
@@ -17,7 +14,5 @@ public class Palindrome {
         } else {
             System.out.println(original + " is not a palindrome.");
         }
-
-        sc.close();
     }
 }
