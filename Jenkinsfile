@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                // Replace with your actual Git repo URL
-                git 'https://github.com/sai-gandhi/jenkins_java_implementation.git'
-            }
-        }
+        // stage('Clone Repo') {
+        //     steps {
+        //         // Replace with your actual Git repo URL
+        //         git 'https://github.com/sai-gandhi/jenkins_java_implementation.git'
+        //     }
+        // }
 
         stage('Compile') {
             steps {
