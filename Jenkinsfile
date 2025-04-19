@@ -16,11 +16,11 @@ pipeline {
             }
         }
 
+
         stage('Run') {
             steps {
-                echo 'Running Palindrome class...'
-                // You can change the input here if needed
-                bat 'echo "madam" | java Palindrome'
+                echo 'Running Palindrome.java...'
+                bat 'java Palindrome'
             }
         }
     }
