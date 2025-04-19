@@ -12,7 +12,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compiling Palindrome.java...'
-                sh 'javac Palindrome.java'
+                bat 'javac Palindrome.java'
             }
         }
 
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Running Palindrome class...'
                 // You can change the input here if needed
-                sh 'echo "madam" | java Palindrome'
+                bat 'echo "madam" | java Palindrome'
             }
         }
     }
